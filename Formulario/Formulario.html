@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="Formulario.css" media="screen">
+    <title>Cadastro</title>
+</head>
+
+<body>
+    <div>
+        <h1 id="titulo">Cadastro de Clientes</h1>
+        <p id="subtitulo">Complete suas informações</p>
+        <br>
+    </div>
+
+    <form>
+        <fieldset class="grupo">
+            <div class="campo">
+                <label for="nome"><strong>Nome</strong></label>
+                <input type="text" name="nome" id="nome" required>
+            </div>
+
+            <div class="campo">
+                <label for="sobrenome"><strong>Sobrenome</strong></label>
+                <input type="text" name="sobrenome" id="sobrenome" required>
+            </div>
+        </fieldset>
+
+        <div class="campo">
+            <label for="email"><strong>Email</strong></label>
+            <input type="email" name="email" id="email" required>
+        </div>
+
+        <div class="campo">
+            <label><strong>Qual sua sexualidade?</strong> </label>
+            <label>
+                <input type="radio" name="genero" value="masculino" checked>Masculino
+            </label>
+            <label>
+                <input type="radio" name="genero" value="feminino">Feminino
+            </label>
+            <label>
+                <input type="radio" name="genero" value="indefinido">Outros
+            </label>
+        </div>
+
+        <div class="campo">
+            <label for="idade"><strong>Idade</strong></label>
+            <select id="idade" required>
+                <option selected disabled value="">Selecione...</option>
+                <option>Menor que 10 anos</option>
+                <option>10 a 20 anos</option>
+                <option>20 a 30 anos</option>
+                <option>maior que 30 anos</option>
+            </select>
+        </div>
+
+        <fieldset class="grupo">
+            <div id="check">
+                <label><strong>Selecione a sua profissão:</strong></label><br><br>
+                <input type="checkbox" id="profissao" nome="profissao1" value="Empregado">
+                <label for="profissao">Empregado</label>
+                <input type="checkbox" id="profissao" nome="profissao2" value="Autônomo">
+                <label for="profissao">Autônomo</label>
+                <input type="checkbox" id="profissao" nome="profissao3" value="Desempregado">
+                <label for="profissao">Desempregado</label>
+                <input type="checkbox" id="profissao" nome="profissao4" value="Estudante">
+                <label for="profissao">Estudante</label>
+                <input type="checkbox" id="profissao" nome="profissao5" value="Estágio">
+                <label for="profissao">Estágio</label>
+            </div>
+        </fieldset>
+
+        <div class="campo">
+            <br>
+            <label for=experiencia><strong>Conte um pouco da sua experiência com a loja:</strong></label>
+            <textarea rows="6" style="width: 26em" id="experiencia" name="experiencia"></textarea>
+        </div>
+
+        <button class="botao" type="submit" onsubmit="">Concluido</button>
+
+    </form>
+
+</body>
+
+</html>
